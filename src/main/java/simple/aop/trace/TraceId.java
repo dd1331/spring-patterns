@@ -3,6 +3,7 @@ package simple.aop.trace;
 import java.util.UUID;
 
 public class TraceId {
+
     private String id;
     private int level;
 
