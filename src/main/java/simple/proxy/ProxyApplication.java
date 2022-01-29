@@ -10,10 +10,14 @@ import simple.proxy.config.AppV1Config;
 import simple.proxy.config.AppV2Config;
 import simple.proxy.config.v1_proxy.ConcreteProxyConfig;
 import simple.proxy.config.v1_proxy.InterfaceProxyConfig;
+import simple.proxy.config.v2_dynamicproxy.DynamicProxyBasicConfig;
+import simple.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig;
 
 //@Import({AppV1Config.class, AppV2Config.class})
 //@Import(InterfaceProxyConfig.class)
-@Import(ConcreteProxyConfig.class)
+//@Import(ConcreteProxyConfig.class)
+//@Import(DynamicProxyBasicConfig.class)
+@Import(DynamicProxyFilterConfig.class)
 @SpringBootApplication(scanBasePackages = "simple.proxy.app")
 public class ProxyApplication {
 
